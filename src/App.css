@@ -1,4 +1,4 @@
-.App {
+/* .App {
   font-family: Arial, sans-serif;
   max-width: 600px;
   margin: 0 auto;
@@ -31,4 +31,65 @@
   color: white;
   padding: 10px;
   border-radius: 4px;
+} */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-container {
+  width: 400px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.messages-container {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.message-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.message {
+  margin: 0;
+}
+
+.message-actions {
+  display: flex;
+}
+
+.edit-button,
+.delete-button {
+  margin-left: 8px;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 16px;
+}
+
+input[type='text'] {
+  flex-grow: 1;
+  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.send-button {
+  margin-left: 8px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }

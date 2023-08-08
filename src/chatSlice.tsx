@@ -16,10 +16,20 @@ export const chatSlice = createSlice({
     addMessage: (state, action: PayloadAction<string>) => {
       state.messages.push(action.payload);
     },
+    editMessage: (
+      state,
+      action: PayloadAction<{ index: number; message: string }>
+    ) => {
+      const { index, message } = action.payload;
+      state.messages[index] = message;
+    },
+    deleteMessage: (state, action: PayloadAction<number>) => {
+      state.messages.splice(action.payload, 1);
+    },
   },
 });
 
-export const { addMessage } = chatSlice.actions;
+export const { addMessage, editMessage, deleteMessage } = chatSlice.actions;
 
 export const selectMessages = (state: RootState) => state.chat.messages;
 
