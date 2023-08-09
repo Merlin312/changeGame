@@ -1,42 +1,12 @@
-/* .App {
-  font-family: Arial, sans-serif;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f5f6fa;
-  box-sizing: border-box;
-}
-
-.App input[type='text'] {
-  width: 75%;
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #3498db;
-  border-radius: 4px;
-}
-
-.App button {
-  width: 20%;
-  height: 40px;
-  margin-left: 5%;
-  background-color: #3498db;
-  color: #fff;
-  border: 2px solid #3498db;
-  border-radius: 4px;
-}
-
-.App message {
-  margin-bottom: 10px;
-  background-color: #3498db;
-  color: white;
-  padding: 10px;
-  border-radius: 4px;
-} */
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #24282c;
+}
+body {
+  background-color: #24282c;
 }
 
 .chat-container {
