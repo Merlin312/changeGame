@@ -7,6 +7,7 @@ import {
   selectMessages,
 } from './chatSlice';
 import './App.css';
+import TikTakToe from './components/TikTakToe';
 
 function App() {
   const messages = useSelector(selectMessages);
@@ -104,6 +105,7 @@ function App() {
           </button>
         </div>
       </div>
+      <TikTakToe />
     </div>
   );
 }
